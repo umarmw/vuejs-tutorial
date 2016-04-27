@@ -1,4 +1,4 @@
-# y
+# Vue.js tutorial from scoth.io
 
 > a vue.js project
 
