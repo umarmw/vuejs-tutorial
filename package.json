@@ -2,7 +2,7 @@
   "name": "vue.js tutorial",
   "version": "1.0.0",
   "description": "a vue.js project",
-  "author": "Umar Ibn Mohammad Waliyullah <waliyullahu@proximity.bbdo.fr>",
+  "author": "Umar Waliyullah <umar.mw@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

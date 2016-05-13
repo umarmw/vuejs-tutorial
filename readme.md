@@ -2,6 +2,23 @@
 
 > a vue.js project
 
+# Indroduction
+
+Build a Single Page Time Tracking App with Vue.js
+
+
+# Source
+
+## Part 1
+
+https://scotch.io/tutorials/build-a-single-page-time-tracking-app-with-vue-js-introduction
+
+## Part 2
+
+https://scotch.io/tutorials/build-a-single-page-time-tracking-app-with-vue-js-part-ii
+
+
+
 ## Build Setup
 
 ``` bash
@@ -25,3 +42,8 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+# Credits
+
+To the author of this article
