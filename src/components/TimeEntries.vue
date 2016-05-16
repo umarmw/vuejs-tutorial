@@ -63,3 +63,66 @@
     </div>
   </div>
 </template>
+
+
+
+<script>
+  export default {
+    data () {
+      // We want to start with an existing time entry
+      let existingEntry = {
+        user: {
+          firstName: 'Ryan',
+          lastName: 'Chenkie',
+          email: 'ryanchenkie@gmail.com',
+          image: 'https://1.gravatar.com/avatar/7f4ec37467f2f7db6fffc7b4d2cc8dc2?s=250'
+        },
+        comment: 'First time entry',
+        totalTime: 1.5,
+        date: '2016-04-08'
+      }
+      return {
+        // Start out with the existing entry
+        // by placing it in the array
+        timeEntries: [existingEntry]
+      }
+    },
+    methods: {
+      deleteTimeEntry (timeEntry) {
+        // Get the index of the clicked time entry and splice it out
+        let index = this.timeEntries.indexOf(timeEntry)
+        if (window.confirm('Are you sure you want to delete this time entry?')) {
+          this.timeEntries.splice(index, 1)
+          this.$dispatch('deleteTime', timeEntry)
+        }
+      }
+    },
+    events: {
+      timeUpdate (timeEntry) {
+        this.timeEntries.push(timeEntry)
+        return true
+      }
+    }
+  }
+</script>
+
+
+<style>
+  .avatar {
+    height: 75px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .user-details {
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    margin: -10px 0;
+  }
+  .time-block {
+    padding: 10px;
+  }
+  .comment-section {
+    padding: 20px;
+  }
+</style>
